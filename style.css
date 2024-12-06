@@ -1,68 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-  font-family: 'higuen';
-  src: url('/Higuen\ Serif.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'higuen';
+    src: url('/Higuen\ Serif.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'BDSans';
-  src: url('/BDSans-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BDSans';
+    src: url('/BDSans-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'BDSans2';
-  src: url('/BDSans-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-*{
-padding: 0;
-margin: 0;
-text-decoration: none;
-box-sizing: border-box;
-}
-:root{
-    --pink : #FFAFDA;
-    --d-green : #032B22;
-    --l-green : #40FFB5;
-    --white : #efefef;
-    --black : #000;
+    font-family: 'BDSans2';
+    src: url('/BDSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-html{
-font-size: 62.5%;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #FFAFDA;
+    --d-green: #032B22;
+    --l-green: #40FFB5;
+    --white: #efefef;
+    --black: #000;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 
-p{
-font-size: 1.6rem;
-line-height: 2.5rem;
+p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
 }
 
-h1{
+h1 {
     font-family: higuen;
 }
-#sample{
+
+#sample {
     width: 100%;
     height: 100vh;
     background-color: var(--d-green);
 }
-#hero{
+
+#hero {
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.hero-video{
+
+.hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
 }
-.hero{
+
+.hero {
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -72,11 +80,13 @@ h1{
     flex-direction: column;
     text-align: center;
 }
-.logo{
+
+.logo {
     width: 10rem;
     filter: brightness(100);
 }
-.hero h2{
+
+.hero h2 {
     font-size: 5rem;
     letter-spacing: 2px;
     color: var(--white);
@@ -84,7 +94,8 @@ h1{
     font-family: 'BDSans2';
 
 }
-.hero h1{
+
+.hero h1 {
     font-size: 10vw;
     font-family: higuen;
     color: var(--pink);
@@ -92,14 +103,16 @@ h1{
     margin: 5rem;
     margin-top: 0;
 }
-.hero h3{
+
+.hero h3 {
     font-size: 5rem;
     color: var(--white);
     letter-spacing: 2px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
 }
-.btn{
+
+.btn {
     font-family: 'BDSans2';
     color: var(--white);
     font-size: 2rem;
@@ -110,12 +123,14 @@ h1{
     transition: all 0.3s ease-in-out;
     font-weight: 500;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--white);
     color: var(--d-green);
 }
+
 /* Welcome */
-#welcome{
+#welcome {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,93 +138,230 @@ h1{
     padding: 5rem 0;
     background-color: var(--d-green);
 }
-.welcome{
+
+.welcome {
     text-align: center;
     width: 500px;
 }
-.heading{
-    font-size : 6rem;
+
+.heading {
+    font-size: 6rem;
     font-family: higuen;
     color: var(--l-green);
     margin-bottom: 3rem;
     font-weight: 300;
 }
-.welcome p{
+
+.welcome p {
     color: var(--white);
     font-size: 2rem;
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     line-height: 3.5rem;
 }
-.welcome-img img{
+
+.welcome-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.welcome-img{
+
+.welcome-img {
     width: 600px;
     height: 600px;
     overflow: hidden;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
+/* accommodations */
+#accommodations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    background-color: var(--pink);
+}
+
+.accommodations-header {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.h1{
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.accommodations {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    gap: 3rem;
+}
+
+.accommodations-box {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.accommodations-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.accommodations-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.accommodations-box:hover .accommodations-img img {
+    transform: scale(1.1);
+}
+
+.accommodations-desc {
+    text-align: center;
+    padding: 1rem;
+}
+
+.accommodations-desc h3 {
+    font-size: 1.9rem;
+    font-family: 'BDSans2';
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.accommodations-desc h1 {
+    font-size: 2.5rem;
+    font-family: higuen;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.accommodations-desc h2 {
+    font-size: 1.7rem;
+    font-family: "Cormorant Garamond", serif;
+}
+#cover{
+    width: 100%;
+    height: 100%;
+    background-color: var(--d-green);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 100;
+}
+.cover-img{
+    width: 80%;
+    height: 90vh;
+}
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1200px) {
-    .welcome-img{
+    .welcome-img {
         width: 400px;
         height: 400px;
     }
 
-    .welcome{
+    .welcome {
         width: 470px;
     }
-    .heading{
+
+    .heading {
         font-size: 4.5rem;
     }
-
+    .h1 {
+        font-size: 6vw;
+    }
 }
+
 @media screen and (max-width: 1000px) {
     .welcome {
         width: 307px;
     }
+
     .welcome-img {
         width: 350px;
         height: 350px;
     }
+    .accommodations-box {
+        width: 355px;
+    }
 }
+
 @media screen and (max-width: 800px) {
     .hero h2 {
         font-size: 3rem;
     }
+
     .hero h3 {
         font-size: 3rem;
     }
+
     .hero h1 {
         font-size: 15vw;
     }
+
     #welcome {
         flex-direction: column;
     }
-    .welcome{
+
+    .welcome {
         width: 80%;
     }
-    .welcome-img{
+
+    .welcome-img {
         width: 80%;
         max-height: 500px;
+    }
+    .accommodations-img {
+        height: 265px;
+    }
+    .h1 {
+        font-size: 8vw;
+    }
+    .accommodations-header{
+        margin-bottom: 4rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .hero h1{
+    .hero h1 {
         margin: 2rem 0;
         margin-bottom: 3rem;
     }
+
     .hero h2 {
         font-size: 2.3rem;
     }
+
     .hero h3 {
         font-size: 2.3rem;
     }
-    .heading{
+
+    .heading {
         font-size: 3.5rem;
+    }
+    .accommodations-box {
+        width: 90%;
+    }
+    .h1 {
+        font-size: 11vw;
     }
 }
