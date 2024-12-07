@@ -364,4 +364,8 @@ h1 {
     .h1 {
         font-size: 11vw;
     }
+    .cover-img {
+        width: 90%;
+        height: 55vh;
+    }
 }
