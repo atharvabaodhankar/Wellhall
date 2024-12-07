@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: 'higuen';
-    src: url('/Higuen\ Serif.woff2') format('woff2');
+    src: url('./Higuen\ Serif.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BDSans';
-    src: url('/BDSans-Bold.woff2') format('woff2');
+    src: url('./BDSans-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BDSans2';
-    src: url('/BDSans-Regular.woff2') format('woff2');
+    src: url('./BDSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
