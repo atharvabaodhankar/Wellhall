@@ -36,3 +36,20 @@ accoBoxs.forEach(box => {
 cover.addEventListener("click", () => {
   cover.style.display = "none";
 })
+
+
+var familyTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#family",
+    start: "top top",
+    end: window.innerWidth > 800 ? "+300% top" : "+300% top",
+    scrub: 3,
+    pin: true
+  }
+})
+
+familyTl.to(".family", {
+  xPercent: window.innerWidth > 800 ? -55 : -80,
+  duration: 5,
+  ease: "none"
+})
