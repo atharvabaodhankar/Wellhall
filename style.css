@@ -335,6 +335,63 @@ h1 {
 .family-img-2{
     height: 70vh;
 }
+/* Promos */
+#promos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    background-color: var(--d-green);
+}
+.promos-header{
+    margin-bottom: 7rem;
+    text-align: center;
+    h1{
+        color: var(--l-green);
+    }
+}
+.promos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 0 1rem;
+}
+.promos-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    cursor: pointer;
+}
+.promos-img{
+    width: 100%;
+    height: 250px;
+}
+.promos-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promos-desc{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.promos-desc h1{
+    font-size: 2.5rem;
+    color: var(--l-green);
+    font-weight: 300;
+    height: 4rem;
+}
+.promos-desc p{
+   color: var(--white);
+   margin-top: 1.5rem;
+}
+
 
 @media screen and (max-width: 1200px) {
     .welcome-img {
@@ -351,6 +408,12 @@ h1 {
     }
     .h1 {
         font-size: 6vw;
+    }
+    .promos-box{
+        width: 350px;
+    }
+    .promos-desc h1{
+        height: 5rem;
     }
 }
 
