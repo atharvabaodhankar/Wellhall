@@ -391,7 +391,48 @@ h1 {
    color: var(--white);
    margin-top: 1.5rem;
 }
+/* Press */
+#press{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.press-header{
+    margin-bottom: 7rem;
+    text-align: center;
+    h1{
+        color: var(--d-green);
+    }
+}
+.press{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.press-box{
+    background-color: var(--pink);
+    text-align: center;
+    padding: 6rem 2rem;
+    width: 24%;
 
+}
+.press-box p{
+    color: var(--black);
+    font-size: 1.9rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+.press-box h3{
+    color: var(--d-green);
+    font-size: 2.3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    margin-top: 1rem;
+}
 
 @media screen and (max-width: 1200px) {
     .welcome-img {
@@ -414,6 +455,9 @@ h1 {
     }
     .promos-desc h1{
         height: 5rem;
+    }
+    .press-box {
+        width: 30%;
     }
 }
 
@@ -483,6 +527,12 @@ h1 {
     .family-img-3{
         width: 70vw;
     }
+    .press{
+        flex-wrap: wrap;
+    }
+    .press-box{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -511,5 +561,8 @@ h1 {
     .cover-img {
         width: 90%;
         height: 55vh;
+    }
+    .press-box{
+        width: 85%;
     }
 }
