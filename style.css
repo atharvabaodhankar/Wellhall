@@ -40,6 +40,9 @@ html {
     font-size: 62.5%;
 }
 
+#main{
+    overflow: hidden;
+}
 
 p {
     font-size: 1.6rem;
@@ -433,6 +436,52 @@ h1 {
     font-weight: 500;
     margin-top: 1rem;
 }
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0;
+    background-color: #032B22;
+}
+.footer{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footer-box{
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+}
+.footer-box h2{
+    font-family: BDSans2;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.footer-box p{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.footer-box h3{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.footer-main{
+    width: 100%;
+    text-align: center;
+}
+.footer-main h1{
+    font-size: 16vw;
+    font-weight: 400;
+    color: var(--l-green);
+}
 
 @media screen and (max-width: 1200px) {
     .welcome-img {
@@ -532,6 +581,13 @@ h1 {
     }
     .press-box{
         width: 70%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-box{
+        padding: 3rem 0;
     }
 }
 
