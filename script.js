@@ -53,3 +53,43 @@ familyTl.to(".family", {
   duration: 5,
   ease: "none"
 })
+
+gsap.from(".logo", {
+  yPercent: 200,
+  scale : window.innerWidth > 800 ? 7 : 4,
+  duration: 2,
+})
+
+const video = document.querySelector("video");
+
+var preloader = gsap.timeline();
+
+preloader.to(".logo", {
+  yPercent: 0,
+  scale: 1,
+  duration: 2,
+},"same")
+preloader.to(".preloader-left", {
+  xPercent: -100,
+  duration: 1,
+  delay: 1,
+  ease : "power3.in",
+}, "same")
+preloader.to(".preloader-right", {
+  xPercent: 100,
+  duration: 1,
+  delay: 1,
+  ease : "power3.in",
+}, "same")
+preloader.to(".preloader", {
+  display: "none",
+})
+preloader.from(".hero h2 , .hero h3 , .hero h1", {
+  opacity: 0,
+  stagger : 0.4,
+  duration: 1,
+})
+video.addEventListener('loadeddata', () => {
+
+  preloader.play();
+});

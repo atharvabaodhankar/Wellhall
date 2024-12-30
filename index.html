@@ -11,6 +11,10 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="preloader-left"></div>
+    <div class="preloader-right"></div>
+  </div>
   <section id="main">
     <section id="hero">
       <video src="./hero.mp4" class="hero-video" autoplay loop muted></video>
@@ -21,7 +25,7 @@
         <h2>WELCOME TO</h2>
         <h1>The Wellhall</h1>
         <h3>RESORT & SPA HOTEL</h3>
-        <a href="#" class="btn">LEARN MORE</a>
+        <a href="#" class="btn" id="btn">LEARN MORE</a>
       </div>
     </section>
     <section id="welcome">
@@ -192,9 +196,11 @@
         <div class="footer-box">
           <h2>Office Hours</h2>
           <h3>Monday to Friday <br>
-           <span>9:00 am to 6:00 pm</span> </h3>
+            <span>9:00 am to 6:00 pm</span>
+          </h3>
           <h3>Saturday <br>
-           <span>9:00 am to 12:00 noon</span> </h3>
+            <span>9:00 am to 12:00 noon</span>
+          </h3>
         </div>
       </div>
       <div class="footer-main">
@@ -213,6 +219,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 
 </html>
